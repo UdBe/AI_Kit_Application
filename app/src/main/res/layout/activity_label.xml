@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    tools:context=".textdet">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="373dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FFFFFF">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/text_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"
+        android:maxLines="5"
+        android:text="Detect Objects from Image \n \n \n "
+        android:textAlignment="center"
+        android:textIsSelectable="true"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/capture_image"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/text_display"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/buttonround2"
+        android:text="Capture Image"
+        android:layout_centerInParent="true"
+        android:textSize="18sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/detect_text"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/capture_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttonround2"
+        android:text="Detect Object"
+        android:textSize="18sp">
+
+    </Button>
+
+</RelativeLayout>
